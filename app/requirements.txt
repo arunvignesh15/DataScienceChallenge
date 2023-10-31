@@ -1,0 +1,11 @@
+prometheus-fastapi-instrumentator
+uvicorn
+fastapi
+pytesseract
+transformers
+python-multipart
+docqa
+tesseract
+numpy
+opencv-python
+pillow
