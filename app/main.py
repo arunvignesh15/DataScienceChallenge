@@ -35,7 +35,6 @@ app = FastAPI(title="Data Science Challenge - Invoice Extraction",
 def home():
     return "Hello World"
 
-
 # Configure the logging
 logging.basicConfig(
     filename="invoiceExtraction_"+datetime.datetime.today().strftime('%Y-%m-%d')+".log",  
