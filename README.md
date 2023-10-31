@@ -6,7 +6,7 @@ In today's increasingly complicated world with a variety of businesses and proce
 
 ## Outcome
 
-Using this solution, user will be able to extract the below outcomes as result when user uploads a invoice image.
+Using this solution, the user will be able to extract the below outcomes as a result when the user uploads an invoice image.
 * Company Name
 * Amount
 * Address
@@ -39,7 +39,7 @@ Now you have access to those three containers and their respective ports:
 * Prometheus: http://localhost:9090/
 * Grafana: http://localhost:3000/
 
-To view the FastAPI Swagger page is available on `http://localhost:8000/docs` endpoint, here you can see all aviable routes which has been added.
+To view the FastAPI Swagger page is available on `http://localhost:8000/docs` endpoint, here you can see all available routes that have been added.
 
 <p align="center">
   <img src="./fastapi_1.png">
@@ -51,36 +51,39 @@ To view the FastAPI Swagger page is available on `http://localhost:8000/docs` en
   <img src="./fastapi_2.png">
 </p>
 
-* Now you can upload the invoice image and do the neccesary testing.
+* Now you can `upload` the invoice image and do the necessary testing.
 
 <p align="center">
   <img src="./fastapi_3.png">
 </p>
 
+[!IMPORTANT]
+For the first upload, you will see a slowness, as in the background the system is downloading the model from `Hugging Face`. From the second upload onwards that will be fixed.
+
 
 On the FastAPI, you can access `/metrics` endpoint to see the data Prometheus is scraping from it.
 
-## How would you montior the solution?
+## How would you monitor the solution?
 
-Here i have come up with 2 approches 
+Here I have come up with 2 approaches 
 1. Using Log monitoring 
 2. Using Prometheus and Grafana 
 
 The Log files will be created for each execution within the container image.
 
-Also, you can montior the solution using Grafana, which provides 
-* Total request per minutes
+Also, you can monitor the solution using Grafana, which provides 
+* Total request per minute
 * Request per minutes
-* Errors per seconds
+* Errors per second
 * Average response time
 * Request Duration
 * Memory Usage
 * CPU Usage
 
-You can access via `http://localhost:3000/`
+You can access it via `http://localhost:3000/`
 
-Use User Name :`admin`
-    Password  : `pass@123`
+Use User Name: `admin`
+    Password: `pass@123`
 
 After that follow below steps:
 
@@ -90,21 +93,21 @@ After that follow below steps:
   <img src="./grafana_1.png">
 </p>
 
-* Click the `Dashboard` option and you can see `Services` option at right side. Click the `Services`, a `FastAPI Dashboard` option will appear. Click on that.
+* Click the `Dashboard` option and you can see the `Services` option on the right side. Click the `Services`, and a `FastAPI Dashboard` option will appear. Click on that.
 
 <p align="center">
   <img src="./grafana_2.png">
 </p>
 
-* As a result you can able to view the Grafana Dashboard which is montioring our Fast API service will be visible.
+* As a result you can able to view the Grafana Dashboard which is monitoring our Fast API service will be visible.
 
 <p align="center">
   <img src="./grafana_3.png">
 </p>
 
-## How would you enchanced the given data?
+## How would you enhance the given data?
 
-For enchancement i have used Image processing technique to the user uploaded image. At first i have identified the bold characters fom the image and removed from the user uploaded image, then later on i have appplied the below techiques 
+For enhancement, I have used an Image processing technique for the user-uploaded image. At first, I identified the bold characters from the image and removed them from the user-uploaded image, then later on I applied the below techniques. 
 
 * Threshold
 * GaussianBlur
@@ -112,11 +115,11 @@ For enchancement i have used Image processing technique to the user uploaded ima
 
 ## Output
 
-As a output, `FinalResultWithImageProcsessing` and `FinalResultWithoutImageProcsessing` keys dict will be provided.
+As an output, `FinalResultWithImageProcsessing` and `FinalResultWithoutImageProcsessing` keys dictionary will be provided.
 
-The `FinalResultWithImageProcsessing` results means the output from the enchanced image after the image processing.
+The `FinalResultWithImageProcsessing` results mean the output from the enhanced image after the image processing.
 
-The `FinalResultWithoutImageProcsessing` results means the output from the raw user uploaded image without the image processing.
+The `FinalResultWithoutImageProcsessing` results mean the output from the raw user-uploaded image without the image processing.
  
 
 _{
