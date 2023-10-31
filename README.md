@@ -41,6 +41,23 @@ Now you have access to those three containers and their respective ports:
 
 To view the FastAPI Swagger page is available on `http://localhost:8000/docs` endpoint, here you can see all aviable routes which has been added.
 
+<p align="center">
+  <img src="./fastapi_1.png">
+</p>
+
+* Click on the `Upload` route end point and click the `Try it out` button
+
+<p align="center">
+  <img src="./fastapi_2.png">
+</p>
+
+* Now you can upload the invoice image and do the neccesary testing.
+
+<p align="center">
+  <img src="./fastapi_3.png">
+</p>
+
+
 On the FastAPI, you can access `/metrics` endpoint to see the data Prometheus is scraping from it.
 
 ## How would you montior the solution?
@@ -61,6 +78,29 @@ Also, you can montior the solution using Grafana, which provides
 * CPU Usage
 
 You can access via `http://localhost:3000/`
+
+Use User Name :`admin`
+    Password  : `pass@123`
+
+After that follow below steps:
+
+* Click the sandwich button near to Home at the top left 
+
+<p align="center">
+  <img src="./grafana_1.png">
+</p>
+
+* Click the `Dashboard` option and you can see `Services` option at right side. Click the `Services`, a `FastAPI Dashboard` option will appear. Click on that.
+
+<p align="center">
+  <img src="./grafana_2.png">
+</p>
+
+* As a result you can able to view the Grafana Dashboard which is montioring our Fast API service will be visible.
+
+<p align="center">
+  <img src="./grafana_3.png">
+</p>
 
 ## How would you enchanced the given data?
 
