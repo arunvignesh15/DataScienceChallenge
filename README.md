@@ -57,7 +57,7 @@ To view the FastAPI Swagger page is available on `http://localhost:8000/docs` en
   <img src="./fastapi_3.png">
 </p>
 
-[!IMPORTANT]
+**Note**
 For the first upload, you will see a slowness, as in the background the system is downloading the model from `Hugging Face`. From the second upload onwards that will be fixed.
 
 
@@ -82,8 +82,9 @@ Also, you can monitor the solution using Grafana, which provides
 
 You can access it via `http://localhost:3000/`
 
-Use User Name: `admin`
-    Password: `pass@123`
+User Name: `admin`
+
+Password: `pass@123`
 
 After that follow below steps:
 
