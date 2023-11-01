@@ -41,10 +41,9 @@ Now you have access to those three containers and their respective ports:
 
 To view the FastAPI Swagger page is available on `http://localhost:8000/docs` endpoint, here you can see all available routes that have been added.
 
-<img src="https://github.com/arunvignesh15/DataScienceChallenge/fastapi_1.png">
 
 <p align="center">
-  <img src="fastapi_1.png">
+  <img src="./fastapi_1.png">
 </p>
 
 * Click on the `Upload` route end point and click the `Try it out` button
